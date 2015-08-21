@@ -4,7 +4,9 @@ var famous = require('famous');
 var DOMElement = require('famous/dom-renderables/DOMElement');
 var FamousEngine = require('famous/core/FamousEngine');
 
- FamousEngine.init();
+
+FamousEngine.init();
 
 var game = FamousEngine.createScene('body').addChild();
 var log = new Log(game.addChild());
+FamousEngine.requestUpdate(log);
